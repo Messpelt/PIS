@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D8C9E34-897C-4CE9-8487-9F228F8BA4D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Lab_PIC_5</RootNamespace>
+    <AssemblyName>Lab_PIC№5</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ActService.cs" />
+    <Compile Include="Controllers\AnimalCardService.cs" />
+    <Compile Include="Controllers\AppService.cs" />
+    <Compile Include="Controllers\ContractService.cs" />
+    <Compile Include="Controllers\OrgService.cs" />
+    <Compile Include="Controllers\PreveligeService.cs" />
+    <Compile Include="Controllers\ReportService.cs" />
+    <Compile Include="Controllers\UserService.cs" />
+    <Compile Include="Data\ActRepository.cs" />
+    <Compile Include="Data\AnimalRepository.cs" />
+    <Compile Include="Data\AppRepository.cs" />
+    <Compile Include="Data\ContractRepository.cs" />
+    <Compile Include="Data\LocationCostReposiroty.cs" />
+    <Compile Include="Data\OrgRepository.cs" />
+    <Compile Include="Data\PrivilegeRepository.cs" />
+    <Compile Include="Data\ReportRepository.cs" />
+    <Compile Include="Data\UserRepository.cs" />
+    <Compile Include="Models\Act.cs" />
+    <Compile Include="Models\AnimalCard.cs" />
+    <Compile Include="Models\App.cs" />
+    <Compile Include="Models\Contract.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\LocationCost.cs" />
+    <Compile Include="Models\Organization.cs" />
+    <Compile Include="Models\Report.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserSessia.cs" />
+    <Compile Include="Views\ActEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ActEdit.Designer.cs">
+      <DependentUpon>ActEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddContractForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddContractForm.Designer.cs">
+      <DependentUpon>AddContractForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AnimalCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AnimalCard.Designer.cs">
+      <DependentUpon>AnimalCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AppAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AppAdd.Designer.cs">
+      <DependentUpon>AppAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AppEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AppEdit.Designer.cs">
+      <DependentUpon>AppEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AutorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AutorizationForm.Designer.cs">
+      <DependentUpon>AutorizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LocationAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LocationAdd.Designer.cs">
+      <DependentUpon>LocationAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\OrgAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OrgAdd.Designer.cs">
+      <DependentUpon>OrgAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrgEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OrgEdit.Designer.cs">
+      <DependentUpon>OrgEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\ActEdit.resx">
+      <DependentUpon>ActEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddContractForm.resx">
+      <DependentUpon>AddContractForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AnimalCard.resx">
+      <DependentUpon>AnimalCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppAdd.resx">
+      <DependentUpon>AppAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppEdit.resx">
+      <DependentUpon>AppEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AutorizationForm.resx">
+      <DependentUpon>AutorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LocationAdd.resx">
+      <DependentUpon>LocationAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\OrgAdd.resx">
+      <DependentUpon>OrgAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OrgEdit.resx">
+      <DependentUpon>OrgEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
